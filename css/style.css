@@ -1,0 +1,154 @@
+body{
+  background-color:#dbd3d3;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 100%;
+}
+
+h1{
+  color: #008073;
+}
+
+ .back-to-top {
+	cursor: pointer;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	display: none;
+}
+
+ #wrapper {
+    overflow-x: hidden;
+ }
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+  color: #008073;
+  font-weight: bold;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+.list-group-item:hover{
+  font-weight: bold;
+  background-color: #008073;;
+  background-image: linear-gradient(to right, rgba(0, 128, 115, 0), rgba(0, 128, 115, 1));
+}
+
+h3{
+  background-color: #008073;
+  padding: 30px;
+}
+
+.card{
+  margin-bottom: 30px;
+  width: 330px;
+}
+
+.progress{
+  width: 70%;
+  height:20px;
+}
+
+.container-fluid{
+  margin: 30px;
+}
+
+footer {
+  text-align: center;
+  background-color: #787878;
+  padding: 30px;
+}
+
+a:hover {
+  color: #008073; 
+  text-decoration: none; 
+}
+
+.photo{
+  height: 600px;
+}
+
+.top-left {
+  position: absolute;
+  top: 100px;
+  left: 242px;
+}
+
+.personal{
+  width: 80%;
+}
+
+.description
+{
+  text-align: justify;
+  padding-top: 40px;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 350px;
+  width: 350px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 350px;
+  width: 350px;
+}
+
+iframe{
+  height: 350px;
+  width: 350px;
+  margin: 0px;
+  border: 1px solid #000000;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+
+  .top-left {
+    left: 300px;
+  }
+
+  .card{
+    width: 420px;
+  }
+  
+}
+
+
+
